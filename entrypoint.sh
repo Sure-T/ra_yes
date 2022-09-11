@@ -79,8 +79,8 @@ EOF
 cat <<-EOF > /v2raybin/vmess.json 
 {
     "v": "2",
-    "ps": "showtime.gq",
-    "add": "showtime.gq",
+    "ps": "rayes-production.up.railway.app",
+    "add": "rayes-production.up.railway.app",
     "port": "443",
     "id": "$4ac3c548-6381-4994-9dd5-7f135fffdd07",
     "aid": "64",			
