@@ -71,7 +71,7 @@ http://0.0.0.0
 	root /wwwroot
 	index index.html
 	timeouts none
-	proxy /wangjm localhost:2333 {
+	proxy /showtime localhost:2333 {
 		websocket
 		header_upstream -Origin
 	}
