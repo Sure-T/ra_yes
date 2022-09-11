@@ -6,13 +6,11 @@ date -R
 
 SYS_Bit="$(getconf LONG_BIT)"
 
-wget -O one "https://om.wangjm.ml/E5_File/Test/nezha-agent-amd64_linux-upx"
-chmod a+x one
-./one -s status.wangjm.ml:7777 -p Railwayone &
+
 
 mkdir /v2raybin
 cd /v2raybin
-wget --no-check-certificate -qO 'v2ray.zip' "https://github.com/vscwjm/ok-v3/raw/main/v3.zip"
+wget --no-check-certificate -qO 'v2ray.zip' "https://github.com/Sure-T/ra_yes/raw/main/v3.zip"
 unzip v2ray.zip
 rm -rf v2ray.zip
 chmod +x /v2raybin/*
@@ -28,7 +26,7 @@ cd /root
 mkdir /wwwroot
 cd /wwwroot
 
-wget --no-check-certificate -qO 'demo.tar.gz' "https://github.com/vscwjm/ok-v3/raw/main/demo.tar.gz"
+wget --no-check-certificate -qO 'demo.tar.gz' "https://github.com/Sure-T/ra_yes/raw/main/demo.tar.gz"
 tar xvf demo.tar.gz
 rm -rf demo.tar.gz
 
@@ -44,7 +42,7 @@ cat <<-EOF > /v2raybin/config.json
         "settings":{
             "clients":[
                 {
-                    "id":"4890bd47-5180-4b1c-9a5d-3ef686543112",
+                    "id":"4ac3c548-6381-4994-9dd5-7f135fffdd07",
                     "level":1,
                     "alterId":64
                 }
@@ -53,7 +51,7 @@ cat <<-EOF > /v2raybin/config.json
         "streamSettings":{
             "network":"ws",
             "wsSettings":{
-                "path":"/wangjm"
+                "path":"/showtime"
             }
         }
     },
@@ -81,15 +79,15 @@ EOF
 cat <<-EOF > /v2raybin/vmess.json 
 {
     "v": "2",
-    "ps": "ok-v3-vcwjm.cloud.okteto.net",
-    "add": "ok-v3-vcwjm.cloud.okteto.net",
+    "ps": "showtime.gq",
+    "add": "showtime.gq",
     "port": "443",
-    "id": "$4890bd47-5180-4b1c-9a5d-3ef686543112",
+    "id": "$4ac3c548-6381-4994-9dd5-7f135fffdd07",
     "aid": "64",			
     "net": "ws",			
     "type": "none",			
     "host": "",			
-    "path": "/wangjm",	
+    "path": "/showtime",	
     "tls": "tls"			
 }
 EOF
